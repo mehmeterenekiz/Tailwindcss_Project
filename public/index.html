@@ -1,0 +1,513 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="./css/styles.css" rel="stylesheet">
+</head>
+
+<body class="font-open">
+
+  <!--Header Section start-->
+  <header class="bg-slate-200 py-6 lg:py-8y text-black">
+    <!--Header Container-->
+    <div class="container flex items-center justify-between space-x-8 lg:space-x-16 pl-3 pr-3">
+      <!--Logo-->
+      <a href="#"
+        class="text-4xl lg:text-7xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-sky-900 to-custom-grey">RA</a>
+      <!--Mobile Menu-->
+      <div class="block md:hidden">
+        <div class="space-y-1 cursor-pointer">
+          <div class="bg-black w-8 h-1 rounded-full"></div>
+          <div class="bg-black w-8 h-1 rounded-full"></div>
+          <div class="bg-black w-8 h-1 rounded-full"></div>
+        </div>
+      </div>
+      <!--Navigation-->
+      <nav class="hidden md:flex justify-between flex-1">
+        <!--Menu-->
+        <div class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
+          <a href="#" class="hover:text-custom-melon transition duration-500"> Hakkımızda </a>
+          <a href="#" class="hover:text-custom-melon transition duration-500"> Bize Ulaşın </a>
+          <a href="#" class="hover:text-custom-melon transition duration-500"> Talep Oluştur </a>
+        </div>
+        <!--Login Area-->
+        <div class="flex items-center space-x-4 lg:space-x-8">
+          <!--Search Area-->
+          <form>
+            <div class="group border-r px-4 mx-4 py-1 border-custom-red">
+              <input type="text"
+                class="opacity-0 group-hover:opacity-80 bg-transparent border-b border-custom-red focus:outline-none w-24 lg:w-44 transition duration-500 focus:opacity-100 ">
+              <button class="group-hover:ml-3 focus:opacity-100 transation duration-500"><i
+                  class="fas fa-search group-hover:text-custom-red transition duration-500"> </i></button>
+            </div>
+          </form>
+          <!--Sign-up Area-->
+          <!--<div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
+            <a href="#">Login</a>
+            <a href="#"
+              class="bg-custom-red px-3 py-1 hover:bg-rose-600 hover:text-custom-grey transition duration-500 whitespace-nowrap">Sign-up</a>
+          </div> -->
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--Header Section end-->
+
+  <!--Banner Section start-->
+  <section class="h-72 md:h-80 lg:h-96 xl:h-128 group relative">
+
+    <!--Banner Image-->
+    <div class="top-0 inset-x-0 h-full object-cover bg-gradient-to-b from-slate-300 via-slate-100 to-transparent"></div>
+
+    <!--Banner Content-->
+    <div class="absolute bottom-1 w-full bg-gradient-to-b from-transparent to-black">
+      <!--Banner Text-->
+      <div class="container pl-5 lg:pl-5 xl:pl-0 ">
+        <h3 class="text-black tracking-wider group-hover:mb-1 duration-500 text-xs md:text-base">
+          Otomobil & Ev
+        </h3>
+        <h1
+          class="text-3xl md:text-4xl lg:text-6xl text-custom-grey group-hover:mb-1 duration-800 transition-colors group-hover:text-black">
+          Tek tıkla talebini oluştur
+        </h1>
+        <p class="text-custom-grey group-hover:mb-1 duration-500 w-4/5 lg:w-2/3 text-xs md:text-sm lg:text-base ">
+          Artık klasik websitelerden ilan aramak yerine kendi talebini oluştur, istediğin araç ya da evi senin
+          belirlediğin kriterler dahilinde sana teklif vererek satsınlar.
+        </p>
+        <!--Detail Container-->
+        <div
+          class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10 md:group-hover:mb-11 lg:group-hover:mb-13 xl:group-hover:mb-20 duration-1000">
+          <!--Watch-->
+          <div class="flex space-x-2 items-center cursor-pointer">
+            <a href="#" class="text-custom-grey text-sm lg:text-lg hover:text-custom-red duration-500">
+              <button
+                class="bg-sky-950 uppercase text-white px-6 py-2 rounded-lg border-2 border-transparent hover:bg-custom-grey hover:border-cusbg-custom-grey hover:text-black transition duration-1000 ease-in-out">
+                Talep Olustur
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Points-->
+    <div
+      class="points flex space-x-3 absolute bottom-5 left-10 opacity-0 group-hover:opacity-100 duration-1000 -ml-4 lg:-ml-4 xl:ml-0">
+      <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-custom-red"></div>
+      <div class="w-3 h-3 lg:w-4 lg:h-4 hover:cursor-pointer rounded-full bg-custom-grey"></div>
+      <div class="w-3 h-3 lg:w-4 lg:h-4 hover:cursor-pointer rounded-full bg-custom-grey"></div>
+      <div class="w-3 h-3 lg:w-4 lg:h-4 hover:cursor-pointer rounded-full bg-custom-grey"></div>
+    </div>
+  </section>
+
+  <!--Cart Seciton-->
+  <section class="py-12 lg:py-20 bg-gradient-to-t from-slate-300 via-slate-100 to-transparent ">
+    <!--Cart Content-->
+    <div class="container flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0 -mt-6 md:mt-0">
+      <!--Left Content-->
+      <div class="basis-2/3">
+        <!--Titles-->
+        <div class="flex space-x-6 divide-x divide-custom-red opacity-80 mb-8 justify-center md:justify-normal">
+          <h2 class="text-custom-red text-xl lg:text-2xl"><a href="#"> Son Talepler </a></h2>
+          <h2 class="text-black pl-5 text-xl lg:text-2xl hover:text-custom-red duration-200"><a href="#"> Popüler </a>
+          </h2>
+          <h2 class="text-black pl-5 text-xl lg:text-2xl hover:text-custom-red duration-500"><a href="#"> En İyiler </a>
+          </h2>
+        </div>
+        <!--Images Container-->
+        <div class="flex flex-wrap m-1">
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+            <img src="./images/image.png" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image detail container-->
+            <div class="absolute px-1 md:px-6 bottom-4 md:bottom-8">
+              <h3
+                class="text-black group-hover:text-custom-red group-hover:mb-1 duration-500 -mb-3 md:-mb-0 text-xs md:text-base group-hover:opacity-0 md:group-hover:opacity-100">
+                Mercedes</h3>
+              <p class="text-xxs md:text-xs opacity-0 group-hover:opacity-100 group-hover:mb-3 duration-500 text-black">
+                Talep Açıklaması çekilecek Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, amet?</p>
+              <div
+                class="absolute flex text-black opacity-0 -bottom-8 group-hover:-bottom-4 group-hover:opacity-100 duration-500 space-x-4">
+                <a href="#" class="hover:text-custom-red opacity-100 "> <i class="fa-solid fa-arrow-right"></i> </a>
+                <p class="text-xs uppercase font-gemunu mt-0.5 md:hidden">Mercedes</p>
+              </div>
+            </div>
+          </div>
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+            <img src="./images/image.png" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image detail container-->
+            <div class="absolute px-1 md:px-6 bottom-4 md:bottom-8">
+              <h3
+                class="text-black group-hover:text-custom-red group-hover:mb-1 duration-500 -mb-3 md:-mb-0 text-xs md:text-base group-hover:opacity-0 md:group-hover:opacity-100">
+                Mercedes</h3>
+              <p class="text-xxs md:text-xs opacity-0 group-hover:opacity-100 group-hover:mb-3 duration-500 text-black">
+                Talep Açıklaması çekilecek Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, amet?</p>
+              <div
+                class="absolute flex text-black opacity-0 -bottom-8 group-hover:-bottom-4 group-hover:opacity-100 duration-500 space-x-4">
+                <a href="#" class="hover:text-custom-red opacity-100 "> <i class="fa-solid fa-arrow-right"></i> </a>
+                <p class="text-xs uppercase font-gemunu mt-0.5 md:hidden">Mercedes</p>
+              </div>
+            </div>
+          </div>
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+            <img src="./images/image.png" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image detail container-->
+            <div class="absolute px-1 md:px-6 bottom-4 md:bottom-8">
+              <h3
+                class="text-black group-hover:text-custom-red group-hover:mb-1 duration-500 -mb-3 md:-mb-0 text-xs md:text-base group-hover:opacity-0 md:group-hover:opacity-100">
+                Mercedes</h3>
+              <p class="text-xxs md:text-xs opacity-0 group-hover:opacity-100 group-hover:mb-3 duration-500 text-black">
+                Talep Açıklaması çekilecek Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, amet?</p>
+              <div
+                class="absolute flex text-black opacity-0 -bottom-8 group-hover:-bottom-4 group-hover:opacity-100 duration-500 space-x-4">
+                <a href="#" class="hover:text-custom-red opacity-100 "> <i class="fa-solid fa-arrow-right"></i> </a>
+                <p class="text-xs uppercase font-gemunu mt-0.5 md:hidden">Mercedes</p>
+              </div>
+            </div>
+          </div>
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+            <img src="./images/image.png" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image detail container-->
+            <div class="absolute px-1 md:px-6 bottom-4 md:bottom-8">
+              <h3
+                class="text-black group-hover:text-custom-red group-hover:mb-1 duration-500 -mb-3 md:-mb-0 text-xs md:text-base group-hover:opacity-0 md:group-hover:opacity-100">
+                Mercedes</h3>
+              <p class="text-xxs md:text-xs opacity-0 group-hover:opacity-100 group-hover:mb-3 duration-500 text-black">
+                Talep Açıklaması çekilecek Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, amet?</p>
+              <div
+                class="absolute flex text-black opacity-0 -bottom-8 group-hover:-bottom-4 group-hover:opacity-100 duration-500 space-x-4">
+                <a href="#" class="hover:text-custom-red opacity-100 "> <i class="fa-solid fa-arrow-right"></i> </a>
+                <p class="text-xs uppercase font-gemunu mt-0.5 md:hidden">Mercedes</p>
+              </div>
+            </div>
+          </div>
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+            <img src="./images/image.png" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image detail container-->
+            <div class="absolute px-1 md:px-6 bottom-4 md:bottom-8">
+              <h3
+                class="text-black group-hover:text-custom-red group-hover:mb-1 duration-500 -mb-3 md:-mb-0 text-xs md:text-base group-hover:opacity-0 md:group-hover:opacity-100">
+                Mercedes</h3>
+              <p class="text-xxs md:text-xs opacity-0 group-hover:opacity-100 group-hover:mb-3 duration-500 text-black">
+                Talep Açıklaması çekilecek Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, amet?</p>
+              <div
+                class="absolute flex text-black opacity-0 -bottom-8 group-hover:-bottom-4 group-hover:opacity-100 duration-500 space-x-4">
+                <a href="#" class="hover:text-custom-red opacity-100 "> <i class="fa-solid fa-arrow-right"></i> </a>
+                <p class="text-xs uppercase font-gemunu mt-0.5 md:hidden">Mercedes</p>
+              </div>
+            </div>
+          </div>
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+            <img src="./images/image.png" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image detail container-->
+            <div class="absolute px-1 md:px-6 bottom-4 md:bottom-8">
+              <h3
+                class="text-black group-hover:text-custom-red group-hover:mb-1 duration-500 -mb-3 md:-mb-0 text-xs md:text-base group-hover:opacity-0 md:group-hover:opacity-100">
+                Mercedes</h3>
+              <p class="text-xxs md:text-xs opacity-0 group-hover:opacity-100 group-hover:mb-3 duration-500 text-black">
+                Talep Açıklaması çekilecek Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, amet?</p>
+              <div
+                class="absolute flex text-black opacity-0 -bottom-8 group-hover:-bottom-4 group-hover:opacity-100 duration-500 space-x-4">
+                <a href="#" class="hover:text-custom-red opacity-100 "> <i class="fa-solid fa-arrow-right"></i> </a>
+                <p class="text-xs uppercase font-gemunu mt-0.5 md:hidden">Mercedes</p>
+              </div>
+            </div>
+          </div>
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden">
+            <img src="./images/image.png" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image detail container-->
+            <div class="absolute px-1 md:px-6 bottom-4 md:bottom-8">
+              <h3
+                class="text-black group-hover:text-custom-red group-hover:mb-1 duration-500 -mb-3 md:-mb-0 text-xs md:text-base group-hover:opacity-0 md:group-hover:opacity-100">
+                Mercedes</h3>
+              <p class="text-xxs md:text-xs opacity-0 group-hover:opacity-100 group-hover:mb-3 duration-500 text-black">
+                Talep Açıklaması çekilecek Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, amet?</p>
+              <div
+                class="absolute flex text-black opacity-0 -bottom-8 group-hover:-bottom-4 group-hover:opacity-100 duration-500 space-x-4">
+                <a href="#" class="hover:text-custom-red opacity-100 "> <i class="fa-solid fa-arrow-right"></i> </a>
+                <p class="text-xs uppercase font-gemunu mt-0.5 md:hidden">Mercedes</p>
+              </div>
+            </div>
+          </div>
+          <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden">
+            <img src="./images/image.png" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+            <!--Image detail container-->
+            <div class="absolute px-1 md:px-6 bottom-4 md:bottom-8">
+              <h3
+                class="text-black group-hover:text-custom-red group-hover:mb-1 duration-500 -mb-3 md:-mb-0 text-xs md:text-base group-hover:opacity-0 md:group-hover:opacity-100">
+                Mercedes</h3>
+              <p class="text-xxs md:text-xs opacity-0 group-hover:opacity-100 group-hover:mb-3 duration-500 text-black">
+                Talep Açıklaması çekilecek Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, amet?</p>
+              <div
+                class="absolute flex text-black opacity-0 -bottom-8 group-hover:-bottom-4 group-hover:opacity-100 duration-500 space-x-4">
+                <a href="#" class="hover:text-custom-red opacity-100 "> <i class="fa-solid fa-arrow-right"></i> </a>
+                <p class="text-xs uppercase font-gemunu mt-0.5 md:hidden">Mercedes</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Right Content-->
+      <div class="basis-1/3 pl-6 lg:pl-0 flex flex-col h-full min-h-[300px]">
+        <!--Title-->
+        <h2 class="text-black mb-8 text-xl md:text-2xl"> Yeni Güncellemeler </h2>
+        <!--Update Containers-->
+        <div class="flex flex-row lg:flex-col lg:h-full lg:justify-between flex-wrap lg:flex-nowrap space-y-4">
+          <!--Item-->
+          <div class="flex items-center group basis-3/4 md:basis-1/2 flex-grow">
+            <!--image item container-->
+            <div class="basis-1/3 h-full">
+              <img src="./images/ikinci-el.jpg" class="h-full w-full object-cover">
+            </div>
+            <!--item detail-->
+            <div class="basis-2/3 text-black group-hover:text-custom-red group-hover:cursor-pointer duration-500 pl-6">
+              <p class="text-xs"> Kullanıcılarımız yeni güncelleme ile birlikte elektronik eşya talepleri
+                oluşturabilecekler. </p>
+              <p class="text-xs tracking-tighter mt-2 font-gemunu"> 24.01.2025 </p>
+            </div>
+          </div>
+          <!--Item-->
+          <div class="flex items-center group basis-3/4 md:basis-1/2 flex-grow">
+            <!--image item container-->
+            <div class="basis-1/3 h-full">
+              <img src="./images/ikinci-el.jpg" class="h-full w-full object-cover">
+            </div>
+            <!--item detail-->
+            <div class="basis-2/3 text-black group-hover:text-custom-red group-hover:cursor-pointer duration-500 pl-6">
+              <p class="text-xs"> Kullanıcılarımız yeni güncelleme ile birlikte elektronik eşya talepleri
+                oluşturabilecekler. </p>
+              <p class="text-xs tracking-tighter mt-2 font-gemunu"> 24.01.2025 </p>
+            </div>
+          </div>
+          <!--Item-->
+          <div class="flex items-center group basis-3/4 md:basis-1/2 flex-grow">
+            <!--image item container-->
+            <div class="basis-1/3 h-full">
+              <img src="./images/yedek-parcalari.jpg" class="h-full w-full object-cover">
+            </div>
+            <!--item detail-->
+            <div class="basis-2/3 text-black group-hover:text-custom-red group-hover:cursor-pointer duration-500 pl-6">
+              <p class="text-xs"> Kullanıcılarımız yeni güncelleme ile birlikte yedek oto parça talepleri
+                oluşturabilecekler. </p>
+              <p class="text-xs tracking-tighter mt-2 font-gemunu"> 24.01.2025 </p>
+            </div>
+          </div>
+          <!--Item-->
+          <div class="flex items-center group basis-3/4 md:basis-1/2 flex-grow">
+            <!--image item container-->
+            <div class="basis-1/3 h-full">
+              <img src="./images/yedek-parcalari.jpg" class="h-full w-full object-cover">
+            </div>
+            <!--item detail-->
+            <div class="basis-2/3 text-black group-hover:text-custom-red group-hover:cursor-pointer duration-500 pl-6">
+              <p class="text-xs"> Kullanıcılarımız yeni güncelleme ile birlikte yedek oto parça talepleri
+                oluşturabilecekler. </p>
+              <p class="text-xs tracking-tighter mt-2 font-gemunu"> 24.01.2025 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--matrix section-->
+  <section class="bg-custom-grey ">
+    <!--matrix container-->
+    <div class="container flex relative justify-center items-center pl-4 md:p-0">
+
+      <!--Left content-->
+      <div class="hidden md:block md:basis-1/3 lg:basis-1/2 items-center">
+        <a href="#" class="text-[16rem] lg:text-[27rem] font-bold text-transparent 
+          bg-gradient-to-r bg-clip-text from-sky-900 to-custom-grey 
+          lg:absolute lg:bottom-0 leading-none mt-12 mb-12 lg:mt-6 lg:mb-6 left-0 pointer-events-none">
+          RA
+        </a>
+      </div>
+
+      <!--Right content-->
+      <div class="md:basis-2/3 lg:basis-1/2">
+        <div class="flex flex-col justify-center py-5 lg:py-10">
+          <a href="#" class="tracking-wider text-custom-red lowercase">talibinden.net</a>
+          <h2 class="mb-0.5 lg:mb-2 text-lg lg:text-2xl"> Biz Kimiz </h2>
+          <p class="text-xs md:text-sm mb-2"> arz yerine talebin ön planda olduğu, kullanıcıların talep ettikleri
+            ürünler için
+            tersine açık artırma sistemi ile fiyat belirleyebileceği bir e-ticaret platformuyuz. Böylece, talep tabanlı
+            bir alışveriş sistemi kurarak, alıcıların talep ettiği fiyat üzerinden pazarlık yapabilmesi sağlanacaktır.
+            Ayrıca, satıcıların aktif olarak teklif vererek müşteri kazanması sağlanarak piyasa dengesinin sağlanmasına
+            katkıda bulunmak isten girişimcileriz. </p>
+
+          <div class="flex space-x-5 md:space-x-4 text-2xl mt-2">
+            <a href="#" class="fa fa-facebook hover:text-custom-red duration-500"></a>
+            <a href="#" class="fa fa-twitter hover:text-custom-red duration-500"></a>
+            <a href="#" class="fa fa-linkedin hover:text-custom-red duration-500"></a>
+            <a href="#" class="fa fa-instagram hover:text-custom-red duration-500"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Populer Comments Section-->
+  <section class="py-12 lg:py-20 bg-black text-custom-grey">
+    <div class="container p-10 lg:p-0">
+      <!--Title-->
+      <h2 class="text-custom-melon mb-4"> Popülar Yorumlar </h2>
+      <!--Grid Area-->
+      <div class="grid grid-cols-6 gap-10">
+        <!--Item 1-->
+          <a href="#" class="col-span-6 md:col-span-3">
+          <div class="border border-custom-red ">
+            <!--Header-->
+            <div class="border-b border-custom-red p-3 flex items-center justify-between">
+              <h3 class="text-base"> Mehmet Eren Ekiz</h3>
+              <p class="text-xs">Talep Sahibi</p>
+            </div>
+            <!--Grid Paragraph-->
+            <p class="p-4 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae voluptate ex
+              iure
+              dolore impedit at rerum fugiat culpa quo provident Lorem ipsum dolor sit, amet consectetur adipisicing
+              elit. Quam?</p>
+            <!--Item1 Footer-->
+            <div
+              class="border-t border-custom-red p-2 items-center flex justify-end space-x-4 font-bold font-gemunu text-xs">
+              <p class="tracking-wider">12.01.2025</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-heart text-lg flex items-center text-custom-red hover:text-">
+                  <p class="pl-1 text-[10px] text-custom-grey">29</p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!--Item 2-->
+        <a href="#" class="col-span-6 md:col-span-3">
+          <div class="border border-custom-red ">
+            <!--Header-->
+            <div class="border-b border-custom-red p-3 flex items-center justify-between">
+              <h3 class="text-base"> Mehmet Eren Ekiz</h3>
+              <p class="text-xs">Talep Sahibi</p>
+            </div>
+            <!--Grid Paragraph-->
+            <p class="p-4 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat veritatis architecto fugit numquam hic eius quis saepe dicta. Illo impedit nulla repellendus laboriosam ab sed est rem consequuntur </p>
+            <!--Item2 Footer-->
+            <div
+              class="border-t border-custom-red p-2 items-center flex justify-end space-x-4 font-bold font-gemunu text-xs tracking-wider">
+              <p>12.01.2025</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-heart text-lg flex items-center text-custom-red hover:text-">
+                  <p class="pl-1 text-[10px] text-custom-grey">16</p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!--Item 3-->
+        <a href="#" class="col-span-6 md:col-span-3 lg:col-span-2">
+          <div class="border border-custom-red ">
+            <!--Header-->
+            <div class="border-b border-custom-red p-3 flex items-center justify-between">
+              <h3 class="text-base"> Ömer Ekiz</h3>
+              <p class="text-xs">Talep Sahibi</p>
+            </div>
+            <!--Grid Paragraph-->
+            <p class="p-4 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat veritatis architecto fugit numquam hic eius quis saepe dicta. Illo impedit nulla repellendus laboriosam ab sed est rem consequuntur </p>
+            <!--Item3 Footer-->
+            <div
+              class="border-t border-custom-red p-2 items-center flex justify-end space-x-4 font-bold font-gemunu text-xs tracking-wider">
+              <p>12.01.2025</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-heart text-lg flex items-center text-custom-red hover:text-">
+                  <p class="pl-1 text-[10px] text-custom-grey">16</p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!--Item 4-->
+        <a href="#" class="col-span-6 md:col-span-3 lg:col-span-2">
+          <div class="border border-custom-red ">
+            <!--Header-->
+            <div class="border-b border-custom-red p-3 flex items-center justify-between">
+              <h3 class="text-base"> Mehmet Eren Ekiz</h3>
+              <p class="text-xs">Talep Sahibi</p>
+            </div>
+            <!--Grid Paragraph-->
+            <p class="p-4 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat veritatis architecto fugit numquam hic eius quis saepe dicta. Illo impedit nulla repellendus laboriosam ab sed est rem consequuntur </p>
+            <!--Item4 Footer-->
+            <div
+              class="border-t border-custom-red p-2 items-center flex justify-end space-x-4 font-bold font-gemunu text-xs tracking-wider">
+              <p>12.01.2025</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-heart text-lg flex items-center text-custom-red hover:text-">
+                  <p class="pl-1 text-[10px] text-custom-grey">16</p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!--Item 5-->
+        <a href="#" class="col-span-6 md:hidden lg:block lg:col-span-2">
+          <div class="border border-custom-red ">
+            <!--Header-->
+            <div class="border-b border-custom-red p-3 flex items-center justify-between">
+              <h3 class="text-base"> Mehmet Eren Ekiz</h3>
+              <p class="text-xs">Talep Sahibi</p>
+            </div>
+            <!--Grid Paragraph-->
+            <p class="p-4 text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat veritatis architecto fugit numquam hic eius quis saepe dicta. Illo impedit nulla repellendus laboriosam ab sed est rem consequuntur </p>
+            <!--Item5 Footer-->
+            <div
+              class="border-t border-custom-red p-2 items-center flex justify-end space-x-4 font-bold font-gemunu text-xs tracking-wider">
+              <p>12.01.2025</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa-regular fa-heart text-lg flex items-center text-custom-red hover:text-">
+                  <p class="pl-1 text-[10px] text-custom-grey">16</p>
+                </i>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!--Footer Section-->
+  <section class="py-2 md:py-4 top-0 inset-x-0 h-full object-cover bg-gradient-to-b from-slate-300 via-slate-100 to-transparent">
+    <!--Footer Container-->
+    <div class="container flex flex-col md:flex-row pb-0 md:pb-8 px-2 lg:px-0">
+      <!--Left Content-->
+      <div class="basis-1/3">
+        <a href="#"
+        class="mb-0 md:mb-2 text-xl lg:text-4xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-sky-900 to-custom-grey">RA</a>
+        <p class="text-xs md:text-sm mb-2 md:mb-0"> Copyright &copy; <script>document.write(new Date().getFullYear());</script> talibinden.net </p>
+      </div>
+      <!--Middle Content-->
+      <div class="basis-1/3"> 
+        <h2 class="mb-0 md:mb-2 text-sky-900 text-base md:text-2xl">Follow Us</h2>
+        <div class="grid grid-cols-12 mb-2 md:mb-0">
+          <a href="#" class="fa fa-facebook col-span-1 hover:text-custom-red duration-500 text-base md:text-xl"></a>
+          <a href="#" class="fa fa-twitter col-span-1 hover:text-custom-red duration-500 text-base md:text-xl"></a>
+          <a href="#" class="fa fa-linkedin col-span-1 hover:text-custom-red duration-500 text-base md:text-xl"></a>
+          <a href="#" class="fa fa-instagram col-span-1 hover:text-custom-red duration-500 text-base md:text-xl"></a>
+        </div>
+      </div>
+      <!--Right Content-->
+      <div class="basis-1/3">
+        <h2 class="mb-0 md:mb-2 text-sky-900 text-base md:text-2xl">Mail</h2>
+        <form action="" class="flex flex-nowrap gap-2 mb-2 md:mb-0">
+          <input class="py-1 px-2 bg-transparent border border-sky-900 uppercase placeholder:text-xs outline-none" placeholder="Mail adresinizi giriniz" type="text">
+          <button class="py-1 px-2 bg-transparent border border-sky-900 uppercase bg-sky-900 font-gemunu hover:bg-sky-900 hover:text-white whitespace-nowrap text-xs md:text-base">Abone Ol</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
+<script src="./js/my.js"></script>
