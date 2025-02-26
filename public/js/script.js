@@ -36,3 +36,27 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }); 
 });
+
+const initApp = () => {
+    const hamburgerBtn = document.getElementById('hamburger-button')
+    const mobileMenu = document.getElementById('mobile-menu')
+    const closeBtn = document.querySelector('#mobile-menu button') // X butonunu seçiyoruz
+
+    const toggleMenu = () => {
+        mobileMenu.classList.toggle('hidden')
+        mobileMenu.classList.toggle('flex')
+
+        // Menü açıldığında body'nin scroll'ını engelle
+        if (mobileMenu.classList.contains('flex')) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'auto' // Menü kapandığında scroll'ı geri getir
+        }
+    }
+
+    hamburgerBtn.addEventListener('click', toggleMenu)
+    closeBtn.addEventListener('click', toggleMenu) // Sadece X butonuna tıklanınca menüyü kapat
+}
+
+document.addEventListener('DOMContentLoaded', initApp)
+
