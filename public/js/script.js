@@ -44,10 +44,9 @@ const initApp = () => {
 
     const toggleMenu = () => {
         mobileMenu.classList.toggle('hidden')
-        mobileMenu.classList.toggle('flex')
 
         // Menü açıldığında body'nin scroll'ını engelle
-        if (mobileMenu.classList.contains('flex')) {
+        if (!mobileMenu.classList.contains('hidden')) {
             document.body.style.overflow = 'hidden'
         } else {
             document.body.style.overflow = 'auto' // Menü kapandığında scroll'ı geri getir
