@@ -588,14 +588,6 @@ a{
   pointer-events: none;
 }
 
-.static{
-  position: static;
-}
-
-.fixed{
-  position: fixed;
-}
-
 .absolute{
   position: absolute;
 }
@@ -653,9 +645,42 @@ a{
   margin: 0.25rem;
 }
 
+.m-2{
+  margin: 0.5rem;
+}
+
+.m-12{
+  margin: 3rem;
+}
+
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+.my-0{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-1{
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 
 .-mb-3{
@@ -1015,18 +1040,6 @@ a{
   --tw-bg-opacity: 0.85;
 }
 
-.bg-opacity-50{
-  --tw-bg-opacity: 0.5;
-}
-
-.bg-opacity-30{
-  --tw-bg-opacity: 0.3;
-}
-
-.bg-opacity-80{
-  --tw-bg-opacity: 0.8;
-}
-
 .bg-gradient-to-b{
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -1216,8 +1229,20 @@ a{
   padding-left: 1.5rem;
 }
 
+.pr-2{
+  padding-right: 0.5rem;
+}
+
 .pr-3{
   padding-right: 0.75rem;
+}
+
+.pr-4{
+  padding-right: 1rem;
+}
+
+.pr-6{
+  padding-right: 1.5rem;
 }
 
 .text-center{
@@ -1352,22 +1377,6 @@ a{
 
 .opacity-80{
   opacity: 0.8;
-}
-
-.opacity-60{
-  opacity: 0.6;
-}
-
-.opacity-90{
-  opacity: 0.9;
-}
-
-.opacity-85{
-  opacity: 0.85;
-}
-
-.opacity-30{
-  opacity: 0.3;
 }
 
 .outline-none{
@@ -1537,6 +1546,54 @@ a{
     grid-column: span 3 / span 3;
   }
 
+  .md\:m-8{
+    margin: 2rem;
+  }
+
+  .md\:m-4{
+    margin: 1rem;
+  }
+
+  .md\:my-2{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .md\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .md\:my-4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .md\:my-12{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .md\:mx-12{
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .md\:mx-2{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+  .md\:mx-3{
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+
+  .md\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .md\:-mb-0{
     margin-bottom: -0px;
   }
@@ -1617,6 +1674,18 @@ a{
     padding-bottom: 2rem;
   }
 
+  .md\:pl-4{
+    padding-left: 1rem;
+  }
+
+  .md\:pl-3{
+    padding-left: 0.75rem;
+  }
+
+  .md\:pl-8{
+    padding-left: 2rem;
+  }
+
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1667,6 +1736,11 @@ a{
 
   .lg\:col-span-2{
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:mx-0{
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .lg\:-ml-4{
@@ -1784,6 +1858,10 @@ a{
 
   .lg\:pl-5{
     padding-left: 1.25rem;
+  }
+
+  .lg\:pr-0{
+    padding-right: 0px;
   }
 
   .lg\:text-2xl{
